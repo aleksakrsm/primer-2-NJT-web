@@ -1,0 +1,56 @@
+.tile {
+	width: 20vw;
+	height: 20vh;
+	max-width: 20vw;
+	max-height: 20vh;
+	border-radius: 1%;
+	box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.15);
+	cursor: pointer;
+}
+
+.tile a {
+	height: inherit;
+	font-size: 120%;
+	color: white;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+   	padding: 0;
+   	line-height:20vh;
+}
+
+.tile a:hover {
+	text-decoration: none;
+}
+
+.green {
+	background: linear-gradient(to bottom right, #609931, #87bc27);
+}
+
+.orange {
+	background: linear-gradient(to bottom right, #ef7f00, #f7b200);
+}
+
+.table-row {
+	cursor: pointer;
+}
+
+.detail-view {
+	text-align:center;
+}
+
+.autoCloseAlert
+{
+	margin: 2% 30% 0% 30%;
+	z-index: 99;
+    animation: appearingAnimation 1s ease-out;   
+}
+
+.overlay {
+    background-color: rgba(1, 1, 1, 0.5);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}

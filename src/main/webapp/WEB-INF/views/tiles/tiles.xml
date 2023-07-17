@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="base-definition" template="/WEB-INF/views/tiles/layout/defaultLayout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/template/defaultHeader.jsp"></put-attribute>
+		<put-attribute name="footer"
+			value="/WEB-INF/views/tiles/template/defaultFooter.jsp"></put-attribute>
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/template/defaultMenu.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+	</definition>
+	
+	
+	<definition name="authentication/login" extends="base-definition">
+		<put-attribute name="title" value="Authentication"></put-attribute>
+		<put-attribute name="header" value=""></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/authentication/login.jsp"></put-attribute>
+	</definition>	
+	
+	<!-- CITY -->
+	<definition name="city-add" extends="base-definition">
+		<put-attribute name="title" value="City - add"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/tiles/template/header1.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/city/city-add.jsp"></put-attribute>
+	</definition>	
+
+	<definition name="city-add" extends="base-definition">
+		<put-attribute name="title" value="City - add"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/tiles/template/header1.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/city/city-add.jsp"></put-attribute>
+	</definition>
+
+	<definition name="city-list" extends="base-definition">
+		<put-attribute name="title" value="City - confirm"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/tiles/template/header1.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/city/city-list.jsp"></put-attribute>
+	</definition>	
+	
+	<definition name="city-confirm" extends="base-definition">
+		<put-attribute name="title" value="City - confirm"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/tiles/template/header1.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/city/city-confirm.jsp"></put-attribute>
+	</definition>	
+	
+	<definition name="city-view" extends="base-definition">
+		<put-attribute name="title" value="City - confirm"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/tiles/template/header1.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/city/city-view.jsp"></put-attribute>
+	</definition>
+	
+	
+	<!-- MANUFACTURER -->
+	<definition name="manufacturer/manufacturer-add" extends="base-definition">
+		<put-attribute name="title" value="Manufactcurer - add"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/tiles/template/header1.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/manufacturer/manufacturer-add.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="manufacturer/manufacturer-list" extends="base-definition">
+		<put-attribute name="title" value="Manufacturer - list"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/manufacturer/manufacturer-list.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="manufacturer/manufacturer-details" extends="base-definition">
+		<put-attribute name="title" value="Manufacturer - details"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/manufacturer/manufacturer-details.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="manufacturer/manufacturer-edit" extends="base-definition">
+		<put-attribute name="title" value="Manufacturer - details"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/manufacturer/manufacturer-edit.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="manufacturer/manufacturer-confirm" extends="base-definition">
+		<put-attribute name="title" value="Manufacturer - details"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/manufacturer/manufacturer-confirm.jsp"></put-attribute>
+	</definition>
+	
+</tiles-definitions>
